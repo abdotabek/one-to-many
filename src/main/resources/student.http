@@ -1,0 +1,27 @@
+POST http://localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "name": "sardor",
+  "item": {
+    "studentId": 3,
+    "bookId": [
+      4,
+      5
+    ]
+  }
+}
+### Get all student
+GET http://localhost:8080/student/getAll
+
+### Delete student by Id
+DELETE http://localhost:8080/student/delete/1
+
+
+### Update student by id
+PUT http://localhost:8080/student/update/6
+Content-Type: application/json
+
+{
+  "name": "axad"
+}

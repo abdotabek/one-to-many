@@ -1,0 +1,28 @@
+POST http://localhost:8080/book/create
+Content-Type: application/json
+
+{
+  "title": "xalqa",
+  "description": "islom tarixi"
+}
+
+###     Get all
+GET http://localhost:8080/book/getAll
+
+### Get by id
+GET http://localhost:8080/book/get/1
+
+### Update by Id
+PUT http://localhost:8080/book/update/1
+Content-Type: application/json
+
+{
+  "description": "xayotiy dars",
+  "title": "xayot saboqlari"
+}
+
+### Delete by id { note: remove linked student before deleting this book }
+DELETE http://localhost:8080/book/delete/4
+
+###Delete all (Note: Delete all associated students before deleting the entire book.)
+DELETE http://localhost:8080/book/deleteAll
